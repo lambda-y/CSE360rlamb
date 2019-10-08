@@ -1,10 +1,10 @@
 package cse360assign2;
 
-public class AddingMachine {
+public class AddingMachineOriginal {
 
 	private int total;
 	
-	public AddingMachine () {
+	public AddingMachineOriginal () {
 		total = 0;  // not needed - included for clarity
 	}
 	
