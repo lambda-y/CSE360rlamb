@@ -6,7 +6,7 @@ public class AddingMachineDriver{
 		
 	public static void main(String args[]) {
 		
-		AddingMachineRlamb calculator = new AddingMachineRlamb();
+		AddingMachine calculator = new AddingMachine();
 		
 		calculator.add(5);
 		

@@ -1,11 +1,11 @@
 package cse360assign2;
 
-public class AddingMachineRlamb {
+public class AddingMachine {
 
 	private int total;
 	private String TransactionHistory = "0 ";
 	
-	public AddingMachineRlamb () {
+	public AddingMachine () {
 		total = 0;  // not needed - included for clarity
 	}
 	
