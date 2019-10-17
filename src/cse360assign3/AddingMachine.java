@@ -14,9 +14,10 @@ package cse360assign3;
 
 
 /**
- * 
+ * Represents a basic Adder that only has subtract and Addition operations
+ * While keeping history of the operations made.
  * @author Ryley Lamb
- *
+ * @version Assignment 3 - Updated from Version Assignment 2
  */
 public class AddingMachine {
 
@@ -24,22 +25,22 @@ public class AddingMachine {
 	protected String TransactionHistory = "0 ";
 	
 	/**
-	 * 
+	 * Constructs the adding machine by setting the total to 0
 	 */
 	public AddingMachine () {
 		total = 0;  // not needed - included for clarity
 	}
 	
 	/**
-	 * 
-	 * @return
+	 * Returns current total
+	 * @return total
 	 */
 	public int getTotal () {
 		return total;
 	}
 	
 	/**
-	 * 
+	 * Adds value to the total
 	 * @param value
 	 */
 	public void add (int value) {
@@ -52,7 +53,7 @@ public class AddingMachine {
 	}
 	
 	/**
-	 * 
+	 * Subtracts value from the total
 	 * @param value
 	 */
 	public void subtract (int value) {
@@ -66,14 +67,15 @@ public class AddingMachine {
 	
 	
 	/**
-	 * 	
+	 * Returns the String Transaction history with all transactions made
+	 * 	@return TransactionHistory
 	 */
 	public String toString () {
 		return TransactionHistory;
 	}
 
 	/**
-	 * 
+	 * Resets the total and transaction history
 	 */
 	public void clear() {
 		total = 0;

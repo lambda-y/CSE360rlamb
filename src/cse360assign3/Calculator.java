@@ -12,15 +12,18 @@
 package cse360assign3;
 
 /**
- * 
+ * Simple inheritance demonstration that adds 3 new functions of Divide
+ * Multiply and raising the total to a power
  * @author Ryley Lamb
+ * @category CSE360 
+ * @version Assignment 3
  *
  */
 public class Calculator extends AddingMachine {
 
 	
 	/**
-	 * 
+	 * Constructs the Adding machine by calling super() for Calculator
 	 */
 	public Calculator() {
 		super();
@@ -28,7 +31,7 @@ public class Calculator extends AddingMachine {
 	}
 
 	/**
-	 * 
+	 * Multiplies the total by value
 	 * @param value
 	 */
 	public void multiply(int value) {
@@ -38,7 +41,7 @@ public class Calculator extends AddingMachine {
 	}
 
 	/**
-	 * 
+	 * Divides the total by value and if zero will set total to zero
 	 * @param value
 	 */
 	public void divide(int value) {
@@ -51,7 +54,8 @@ public class Calculator extends AddingMachine {
 	}
 
 	/**
-	 * 
+	 * Raises the total to the power of value and if value is less than zero
+	 * It will set total to zero
 	 * @param value
 	 */
 	public void pow(int value) {
@@ -61,12 +65,6 @@ public class Calculator extends AddingMachine {
 			super.total = (int) Math.pow(getTotal(), value);
 		}
 		super.TransactionHistory = super.TransactionHistory + "^" + value + " ";
-	}
-
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 	}
 
 }
